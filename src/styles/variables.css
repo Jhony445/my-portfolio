@@ -1,0 +1,49 @@
+:root {
+    /* Colores principales */
+    --color-primary: #2A5C8F;
+    --color-secondary: #6A9FB4;
+    --color-accent: #1A73E8;
+
+    /* Fondos */
+    --bg-light: #F5F7FA;
+    --bg-dark: #1E293B;
+
+    /* Textos */
+    --text-light: #2D3748;
+    --text-dark: #FFFFFF;
+
+    /* Neutros */
+    --border-neutral: #CBD5E0;
+
+    /* Estados de feedback */
+    --color-success: #28A745;
+    --color-warning: #FFC107;
+    --color-error: #DC3545;
+
+    /* Familias tipográficas */
+    --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    --font-family-mono: 'Fira Code', 'Consolas', 'Menlo', monospace;
+
+    /* Tamaños de texto */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    /* Pesos de fuente */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Altura de línea */
+    --line-height-base: 1.5;
+}

@@ -1,0 +1,176 @@
+.header {
+    background-color: var(--bg-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--border-neutral);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 0.1rem;
+}
+
+.name {
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+    transition: color 0.3s ease;
+}
+
+.title {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+    letter-spacing: 0.5px;
+}
+
+.brand:hover .name {
+    color: var(--color-accent);
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-light);
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.ctaButton {
+    background-color: var(--color-accent);
+    color: var(--text-dark) !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.25);
+}
+
+.ctaButton::after {
+    display: none;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.burger span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: var(--text-light);
+    transition: all 0.3s ease;
+    transform-origin: left center;
+}
+
+.burger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(-2px);
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(2px);
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .nav {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--bg-light);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .nav.open {
+        right: 0;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .link {
+        font-size: var(--font-size-lg);
+        width: 100%;
+    }
+
+    .ctaButton {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
