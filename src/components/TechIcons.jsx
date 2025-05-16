@@ -6,7 +6,6 @@ import {
   FaNodeJs,
   FaDatabase,
   FaGitAlt,
-  FaAws,
   FaDocker,
   FaPython,
   FaJava
@@ -24,7 +23,7 @@ const TechIcons = () => {
     { icon: <SiFirebase />, name: 'Firebase' },
     { icon: <SiDotnet />, name: '.NET Core' },
     { icon: <FaGitAlt />, name: 'Git' },
-     { icon: <SiAngular />, name: 'Angular' },
+    { icon: <SiAngular />, name: 'Angular' },
     { icon: <FaDocker />, name: 'Docker' },
     { icon: <FaPython />, name: 'Python' },
     { icon: <FaJava />, name: 'Java' }
