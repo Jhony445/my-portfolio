@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import styles from '../styles/ProjectCard.module.css';
 
-const ProjectCard = ({ title, description, tech, image, demo, code }) => {
+const ProjectCard = ({ title, description, tech, image }) => {
   return (
     <motion.div 
       className={styles.card}
@@ -22,15 +21,6 @@ const ProjectCard = ({ title, description, tech, image, demo, code }) => {
           {tech.map((item, index) => (
             <span key={index} className={styles.tech}>{item}</span>
           ))}
-        </div>
-        
-        <div className={styles.links}>
-          <a href={code} target="_blank" rel="noopener noreferrer" className={styles.link}>
-            <FiGithub /> Código
-          </a>
-          <a href={demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
-            <FiExternalLink /> Demo
-          </a>
         </div>
       </div>
     </motion.div>

@@ -7,21 +7,30 @@ const Projects = () => {
     const projects = [
         {
             title: "Sistema Hotelero",
-            description: "Aplicación móvil para gestión de hoteles con React Native y Firebase",
-            tech: ["React Native", "Firestore", "Node.js"],
+            description: "App móvil para la gestión completa de hoteles: reservas, control de habitaciones y estadísticas de ingresos.",
+            tech: ["React Native", "Firebase", "Node.js"],
             image: "/hotel-app.jpg",
             demo: "#",
             code: "#"
         },
         {
-            title: "Plataforma Educativa",
-            description: "Sistema web para gestión de contenido educativo con .NET Core y React",
-            tech: [".NET Core", "React", "SQL Server"],
-            image: "/edu-platform.jpg",
+            title: "Conexión Femenina",
+            description: "Plataforma web en PHP y MySQL para que mujeres compartan música, eventos y recursos, fomentando una comunidad activa.",
+            tech: ["PHP", "MySQL", "JavaScript"],
+            image: "/volverasoniar.png",
+            demo: "#",
+            code: "#"
+        },
+        {
+            title: "Proyecto Integrador",
+            description: "Aplicación full‑stack con Angular en frontend y .NET Core 8 Web API, respaldada por una base de datos en Google Cloud.",
+            tech: [".NET Core 8 Web API", "Angular", "Google Cloud SQL"],
+            image: "/malo.png",
             demo: "#",
             code: "#"
         }
     ];
+
 
     return (
         <section id="proyectos" className={styles.projectsSection}>

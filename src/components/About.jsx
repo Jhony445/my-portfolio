@@ -83,7 +83,7 @@ export default function About() {
                 <h4 className={styles.jobTitle}>Desarrollador Móvil - Hotel del Angel</h4>
                 <span className={styles.duration}>Ene 2025 - Abr 2025</span>
                 <ul className={styles.responsibilities}>
-                  <li>Desarrollo de app multiplataforma</li>
+                  <li>Desarrollo de app para android</li>
                   <li>Integración Firebase en tiempo real</li>
                   <li>Optimización de procesos en 40%</li>
                 </ul>
