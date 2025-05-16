@@ -46,7 +46,7 @@ export default function About() {
                   <FaMobileAlt className={styles.skillIcon} />
                   <div>
                     <h4 className={styles.skillTitle}>Apps Móviles</h4>
-                    <p className={styles.skillText}>React Native · Android · iOS</p>
+                    <p className={styles.skillText}>React Native · Kotlin · Xamarin</p>
                   </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function About() {
                   <FaReact className={styles.skillIcon} />
                   <div>
                     <h4 className={styles.skillTitle}>Frontend</h4>
-                    <p className={styles.skillText}>React · TypeScript · UX/UI</p>
+                    <p className={styles.skillText}>React · Angular · UX/UI</p>
                   </div>
                 </div>
 

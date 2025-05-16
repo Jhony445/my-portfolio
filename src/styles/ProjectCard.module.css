@@ -1,0 +1,117 @@
+.card {
+    background: var(--bg-light);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-neutral);
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px rgba(42, 92, 143, 0.1);
+    transform: translateY(-5px);
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    /* Relación 3:2 */
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+    transform: scale(1.03);
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.title {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech {
+    background: rgba(42, 92, 143, 0.1);
+    color: var(--color-primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-mono);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-neutral);
+    padding-top: 1.5rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.link:hover {
+    background: rgba(26, 115, 232, 0.1);
+    color: var(--color-accent);
+}
+
+.link svg {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        font-size: var(--font-size-lg);
+    }
+
+    .description {
+        font-size: var(--font-size-sm);
+    }
+
+    .link {
+        padding: 0.5rem;
+        font-size: var(--font-size-sm);
+    }
+}

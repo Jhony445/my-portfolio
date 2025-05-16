@@ -1,21 +1,19 @@
 import React from 'react';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import ProjectCard from '../components/ProjectCard';
+import Projects from '../components/Projects';
+import styles from '../styles/Sections.module.css';
 
 export default function Home() {
   return (
     <main>
-      {/* Sección Sobre mí */}
-      <section id="sobre-mi" style={{ padding: '-3rem 2rem' }}>
+      <section id="sobre-mi" className={styles.aboutSection}>
         <About />
       </section>
-      <section id="proyectos" style={{ padding: '4rem 2rem' }}>
-        <h2>Proyectos</h2>
-        <ProjectCard />
+      <section id="proyectos" className={styles.projectsSection}>
+        <Projects />
       </section>
-      {/* Sección Contacto */}
-      <section id="contacto" style={{ padding: '4rem 2rem' }}>
+      <section id="contacto" className={styles.contactSection}>
         <Contact />
       </section>
     </main>

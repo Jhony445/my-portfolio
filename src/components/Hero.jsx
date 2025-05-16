@@ -1,12 +1,25 @@
 // src/components/Hero.jsx
-import React from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import styles from '../styles/Hero.module.css'
-import avatarSrc from '../assets/perfil1.jpg'
+import React, { useState, useEffect } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import styles from '../styles/Hero.module.css';
+import avatarSrc from '../assets/perfil1.jpg';
 
 export default function Hero() {
-  const { scrollY } = useScroll()
-  const y = useTransform(scrollY, [0, 300], [0, 100])
+  // Estado para detectar si estamos en móvil
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize(); // al montar
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Parallax scroll
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 300], [0, 100]);
 
   return (
     <section className={styles.hero} id="home">
@@ -52,7 +65,11 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <motion.div className={styles.visualContainer} style={{ y }}>
+        <motion.div
+          className={styles.visualContainer}
+          // si es móvil, desactivamos el parallax poniendo y = 0
+          style={{ y: isMobile ? 0 : y }}
+        >
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ type: 'spring', stiffness: 300 }}
@@ -75,5 +92,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

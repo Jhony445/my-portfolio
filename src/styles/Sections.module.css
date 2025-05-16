@@ -1,0 +1,29 @@
+/* Sections.module.css */
+
+.aboutSection {
+    padding: 2rem 2rem;
+}
+
+.projectsSection {
+    padding: 2rem 2rem;
+}
+
+.contactSection {
+    padding: 2rem 2rem;
+}
+
+/* Móvil hasta 768px */
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 0.7rem 1rem 0.5rem;
+        /* 3 arriba, 1 laterales, 2 abajo */
+    }
+
+    .projectsSection {
+        padding: 0.7rem 1rem 0.5rem;
+    }
+
+    .contactSection {
+        padding: 0.7rem 1rem 0.5rem;
+    }
+}
