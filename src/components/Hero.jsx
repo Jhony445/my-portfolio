@@ -17,7 +17,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className={styles.content}
         >
-          <span className={styles.greeting}>Hola, soy</span>
+          <span className={styles.greeting}>Hola, soy jonu</span>
           <h1 className={styles.title}>
             <span className={styles.nameHighlight}>
               Ing. Jonathan D. Martínez Quistian
