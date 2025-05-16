@@ -259,10 +259,10 @@
 
   .primaryCta,
   .secondaryCta {
-    padding: 0.5rem 1rem; /* antes 1rem 2rem */
+    padding: 0.5rem 1rem;
     font-size: var(
       --font-size-base
-    ); /* opcional: ajusta si quieres texto más pequeño */
+    );
   }
 }
 

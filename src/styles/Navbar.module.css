@@ -111,10 +111,8 @@ html {
     display: none;
 }
 
-/* Burger Menu Corregido */
 .burger {
     display: none;
-    /* Oculto por defecto en desktop */
     flex-direction: column;
     justify-content: center;
     gap: 5px;
@@ -135,7 +133,6 @@ html {
     transform-origin: center;
 }
 
-/* Animación corregida para la X */
 .burger.open span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -152,7 +149,6 @@ html {
 @media (max-width: 768px) {
     .burger {
         display: flex;
-        /* Mostrar en móvil */
     }
 
     .nav {
@@ -180,7 +176,6 @@ html {
         align-items: flex-start;
         gap: 2rem;
         padding-bottom: 2rem;
-        /* Espacio para scroll */
     }
 
     .link {
@@ -195,10 +190,8 @@ html {
         width: 100%;
         text-align: center;
         order: 1;
-        /* Mover el botón al final */
     }
 
-    /* Mejorar el hover en móviles */
     .link:hover {
         color: var(--color-accent);
         padding-left: 1rem;
@@ -206,7 +199,6 @@ html {
 
     .link:hover::after {
         width: 0;
-        /* Desactivar subrayado en móvil */
     }
 
     .active {
@@ -217,6 +209,5 @@ html {
 
     .active::after {
         width: 0 !important;
-        /* Desactiva el subrayado en móvil */
     }
 }

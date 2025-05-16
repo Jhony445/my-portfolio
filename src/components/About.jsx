@@ -1,4 +1,3 @@
-// src/components/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaDatabase, FaMobileAlt, FaUniversity, FaAward, FaCode, FaDownload } from 'react-icons/fa';

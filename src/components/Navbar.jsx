@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css';
-import { Link, animateScroll as scroll, scrollSpy  } from 'react-scroll'; // Añade esta importación
+import { Link, animateScroll as scroll, scrollSpy  } from 'react-scroll';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ export default function Navbar() {
 
     useEffect(() => {
     scroll.scrollToTop({ duration: 0 });
-    scrollSpy.update();        // recalcula posiciones de sección
+    scrollSpy.update();
   }, []);
 
   const navLinks = [
@@ -47,7 +47,7 @@ export default function Navbar() {
                 duration={500}
                 offset={-70}
                 spy={true}
-                activeClass={styles.active} // Esto activa la clase
+                activeClass={styles.active}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.text}
