@@ -1,10 +1,11 @@
 .hero {
     background: var(--bg-light);
     padding: 1rem 0;
-    min-height: calc(100vh - 70px);
+    min-height: calc(90vh - 70px);
     /* Compensa el navbar */
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .container {
@@ -191,8 +192,6 @@
 /* ==============================
    Media Queries (Responsivo)
    ============================== */
-
-/* Tablets y móviles: una sola columna y avatar arriba del texto */
 @media (max-width: 1024px) {
     .container {
         display: grid;

@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero style={{ marginTop: '-3rem' }}  />
       <Home />
     </>
   );

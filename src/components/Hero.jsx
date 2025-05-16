@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import styles from '../styles/Hero.module.css'
-import avatarSrc from '../assets/Picture1.png'
+import avatarSrc from '../assets/perfil1.jpg'
 
 export default function Hero() {
   const { scrollY } = useScroll()
@@ -25,7 +25,7 @@ export default function Hero() {
             <span className={styles.cursor}>&#95;</span>
           </h1>
           <h2 className={styles.subtitle}>
-            Desarrollador <span className={styles.stackHighlight}>Full Stack Web</span>
+            Desarrollador <span className={styles.stackHighlight}>Full Stack</span>
           </h2>
           <p className={styles.description}>
             Apasionado por construir aplicaciones web modernas.  

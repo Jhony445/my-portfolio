@@ -1,0 +1,217 @@
+/* src/styles/About.module.css */
+.aboutSection {
+    background: var(--bg-light);
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: var(--font-size-4xl);
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.introText {
+    font-size: var(--font-size-xl);
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+}
+
+.highlight {
+    color: var(--color-accent);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.infoCard {
+    background: var(--text-dark);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(42, 92, 143, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.infoCard:hover {
+    transform: translateY(-5px);
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.icon {
+    color: var(--color-accent);
+    font-size: var(--font-size-2xl);
+    min-width: 40px;
+}
+
+.skillsContainer {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(245, 247, 250, 0.05);
+    border-radius: 1rem;
+}
+
+.skillIcon {
+    font-size: var(--font-size-3xl);
+    color: var(--color-accent);
+    min-width: 50px;
+}
+
+.skillTitle {
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+    font-size: var(--font-size-lg);
+}
+
+.skillText {
+    color: var(--color-secondary);
+    font-size: var(--font-size-sm);
+    opacity: 0.9;
+}
+
+.experienceItem {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-neutral);
+}
+
+.jobTitle {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-lg);
+}
+
+.duration {
+    display: block;
+    color: var(--color-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: 1rem;
+}
+
+.responsibilities {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.responsibilities li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.responsibilities li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: var(--font-size-lg);
+}
+
+.educationItem {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(245, 247, 250, 0.05);
+    border-radius: 0.8rem;
+}
+
+.degree {
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+    font-size: var(--font-size-lg);
+}
+
+.institution {
+    color: var(--color-secondary);
+    font-size: var(--font-size-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .infoCard {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 4rem 1rem;
+    }
+
+    .sectionTitle {
+        font-size: var(--font-size-3xl);
+    }
+
+    .introText {
+        font-size: var(--font-size-lg);
+    }
+
+    .skillItem {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .skillIcon {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: var(--font-size-2xl);
+    }
+
+    .introText {
+        font-size: var(--font-size-base);
+    }
+
+    .cardTitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .jobTitle {
+        font-size: var(--font-size-base);
+    }
+}
