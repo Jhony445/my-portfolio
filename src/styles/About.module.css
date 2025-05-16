@@ -196,6 +196,12 @@
     .skillIcon {
         margin-bottom: 0.5rem;
     }
+
+    .cvButton {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -214,4 +220,28 @@
     .jobTitle {
         font-size: var(--font-size-base);
     }
+}
+
+.cvButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: var(--color-accent);
+    color: var(--text-dark);
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+.cvButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
+}
+
+.downloadIcon {
+    font-size: 1.2em;
 }

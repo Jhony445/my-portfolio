@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css';
-import { Link } from 'react-scroll'; // Añade esta importación
+import { Link, animateScroll as scroll, scrollSpy  } from 'react-scroll'; // Añade esta importación
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    // Cleanup por si el componente se desmonta
-    return () => {
-      document.body.style.overflow = '';
-    };
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = '' };
   }, [isMenuOpen]);
+
+    useEffect(() => {
+    scroll.scrollToTop({ duration: 0 });
+    scrollSpy.update();        // recalcula posiciones de sección
+  }, []);
 
   const navLinks = [
     { to: 'home', text: 'Inicio' },

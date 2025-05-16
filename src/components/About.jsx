@@ -1,7 +1,7 @@
 // src/components/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaDatabase, FaMobileAlt, FaUniversity, FaAward, FaCode } from 'react-icons/fa';
+import { FaReact, FaDatabase, FaMobileAlt, FaUniversity, FaAward, FaCode, FaDownload } from 'react-icons/fa';
 import TechIcons from './TechIcons';
 import styles from '../styles/About.module.css';
 
@@ -17,10 +17,20 @@ export default function About() {
         <div className={styles.header}>
           <h2 className={styles.sectionTitle}>Sobre mí</h2>
           <p className={styles.introText}>
-            Ingeniero en Desarrollo y Gestion de Software especializado en desarrollo Full Stack con 
-            <span className={styles.highlight}> enfoque en soluciones innovadoras</span> y 
+            Ingeniero en Desarrollo y Gestion de Software especializado en desarrollo Full Stack con
+            <span className={styles.highlight}> enfoque en soluciones innovadoras</span> y
             <span className={styles.highlight}> mejores prácticas tecnológicas</span>
           </p>
+          <motion.a
+            href="/cv-jonathan-david-martinez-quistian.pdf"
+            download
+            className={styles.cvButton}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaDownload className={styles.downloadIcon} />
+            Descargar CV
+          </motion.a>
         </div>
 
         <div className={styles.contentGrid}>
@@ -39,7 +49,7 @@ export default function About() {
                     <p className={styles.skillText}>React Native · Android · iOS</p>
                   </div>
                 </div>
-                
+
                 <div className={styles.skillItem}>
                   <FaReact className={styles.skillIcon} />
                   <div>
@@ -68,7 +78,7 @@ export default function About() {
                 <FaAward className={styles.icon} />
                 Experiencia Relevante
               </h3>
-              
+
               <div className={styles.experienceItem}>
                 <h4 className={styles.jobTitle}>Desarrollador Móvil - Hotel del Angel</h4>
                 <span className={styles.duration}>Ene 2025 - Abr 2025</span>
@@ -96,11 +106,11 @@ export default function About() {
                 Formación Académica
               </h3>
               <div className={styles.educationItem}>
-                <h4 className={styles.degree}>Ingeniería en Desarrollo de Software</h4>
+                <h4 className={styles.degree}>Ingeniería en Desarrollo y Gestion de Software</h4>
                 <span className={styles.institution}>UTTT · 2023-2025</span>
               </div>
               <div className={styles.educationItem}>
-                <h4 className={styles.degree}>TSU en Software Multiplataforma</h4>
+                <h4 className={styles.degree}>TSU en Desarrollo de Software Multiplataforma</h4>
                 <span className={styles.institution}>UTTT · 2021-2023</span>
               </div>
             </div>
