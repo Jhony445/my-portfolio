@@ -118,7 +118,7 @@ export default function Contact() {
               <FiGithub className={styles.contactIcon} />
               <h3 className={styles.contactTitle}>GitHub</h3>
               <a
-                href="https://github.com/JonathanMartinezQ"
+                href="https://github.com/Jhony445"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactLink}
