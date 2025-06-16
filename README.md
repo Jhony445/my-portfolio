@@ -1,74 +1,70 @@
- HEAD
-# my-portfolio
 
-# Getting Started with Create React App
+# 🌐 Jonathan Martínez – Web Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there! Welcome to my personal web portfolio — a space where I showcase my most relevant projects as a **Full Stack Developer**. This site is built with ❤️ using modern technologies and is meant to serve as an interactive, visual, and functional resume.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Technologies Used
 
-### `npm start`
+- ⚛️ **React** – Main frontend library.
+- 🎨 **CSS Modules** – Scoped component-based styling.
+- 📦 **Vite** – Ultra-fast development and build tool.
+- 💌 **EmailJS** – Enables sending contact form messages without a backend.
+- 🎞️ **Framer Motion** – Smooth and elegant animations.
+- 🌐 **Responsive Design** – Fully mobile-friendly (mobile first).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Key Features
 
-### `npm test`
+- ✅ **Functional contact form** with direct email delivery using **EmailJS**.
+- ✅ **Interactive hover animations** powered by Framer Motion.
+- ✅ **Showcase of real-world projects**, each with its own stack, description, and links.
+- ✅ **Clean and professional UI**, responsive across devices.
+- ✅ **Modular code structure**, with reusable components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+📦 src
+ ┣ 📁 assets          → Images and visual resources
+ ┣ 📁 components      → Reusable UI components (Navbar, Footer, ProjectCard, etc.)
+ ┣ 📁 styles          → CSS modules for styling
+ ┣ 📜 App.jsx         → Main page with routing
+ ┣ 📜 main.jsx        → Entry point
+ ┣ 📜 emailjs.config  → EmailJS configuration file
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔗 Live Website
 
-### `npm run eject`
+Visit the live portfolio:  
+👉 [https://myportfolio-jonathanquistian.netlify.app/](https://myportfolio-jonathanquistian.netlify.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧠 Featured Projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Hotel Management System** – Mobile app using React Native + Firebase.
+2. **Music Platform** – Social web app built with PHP and MySQL.
+3. **Job Platform** – Web app with .NET Core 8 + Angular + Firestore.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Each project includes an image, description, tech stack, and links (demo / code).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📫 Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you want to learn more or collaborate, feel free to reach out via the contact form or directly:
 
-### Code Splitting
+- ✉️ jonathan_058@hotmail.com  
+- 📱 +52 55 1471 2961
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-4f9a9a3 (Initial commit)
+> “Software should solve real problems, not just look good.”  
+> — Jonathan David Martínez Quistian
