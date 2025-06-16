@@ -1,0 +1,232 @@
+.certificatesSection {
+    background: var(--bg-light);
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: var(--font-size-4xl);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--color-accent);
+    border-radius: 2px;
+}
+
+.sectionSubtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-secondary);
+    max-width: 600px;
+    margin: 2rem auto 0;
+    line-height: 1.6;
+}
+
+.certificatesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 0 1rem;
+}
+
+.certificateCard {
+    background: var(--text-dark);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(42, 92, 143, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-neutral);
+}
+
+.certificateCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(26, 115, 232, 0.15);
+}
+
+.imageContainer {
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-neutral);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.certificateCard:hover .image {
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.title {
+    font-size: var(--font-size-lg);
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border-neutral);
+}
+
+.issuer {
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+}
+
+.date {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .certificatesGrid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificatesSection {
+        padding: 4rem 1rem;
+    }
+
+    .sectionTitle {
+        font-size: var(--font-size-3xl);
+    }
+
+    .sectionSubtitle {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .certificatesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: var(--font-size-base);
+    }
+}
+
+
+/* Modal styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.modalContent {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    background: var(--bg-light);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    color: var(--color-primary);
+    background: rgba(245, 247, 250, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+    transform: scale(1.1);
+    background: var(--color-accent);
+    color: var(--text-dark);
+}
+
+.modalImage {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+}
+
+.modalInfo {
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--text-dark);
+}
+
+.modalInfo h3 {
+    font-size: var(--font-size-xl);
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.modalInfo p {
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.externalLink {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.externalLink:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
