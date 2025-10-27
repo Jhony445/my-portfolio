@@ -17,6 +17,12 @@ const Certificates = () => {
             issuer: "Networking Academy",
             date: "2025",
             image: "/certificados/certificadoPython1.png"
+        },
+        {
+            title: "Curso de Iniciación al Desarrollo con IA",
+            issuer: "BIG School (Brais Moure & Romuald Fons)",
+            date: "2025",
+            image: "/certificados/certificadoIA.png"
         }
     ];
 

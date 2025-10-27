@@ -53,7 +53,7 @@ export default function About() {
                   <FaReact className={styles.skillIcon} />
                   <div>
                     <h4 className={styles.skillTitle}>Frontend</h4>
-                    <p className={styles.skillText}>React · Angular · UX/UI</p>
+                    <p className={styles.skillText}>React · Angular</p>
                   </div>
                 </div>
 
@@ -77,6 +77,15 @@ export default function About() {
                 <FaAward className={styles.icon} />
                 Experiencia Relevante
               </h3>
+              <div className={styles.experienceItem}>
+                <h4 className={styles.jobTitle}>Desarrollador Full Stack - Especialiquidos S.A. de C.V.</h4>
+                <span className={styles.duration}>Jul 2025 - Actualidad</span>
+                <ul className={styles.responsibilities}>
+                  <li>Desarrollo de módulos de operación, reportes y monitoreo con enfoque en reglas de negocio y validación de datos.</li>
+                  <li>Análisis, mantenimiento y optimización básica de la base de datos (MariaDB): consultas, ajustes de índices y depuración de inconsistencias.</li>
+                  <li>Integraciones y automatizaciones: generación de PDF, hojas de Excel y consumo de APIs internas.</li>
+                </ul>
+              </div>
 
               <div className={styles.experienceItem}>
                 <h4 className={styles.jobTitle}>Desarrollador Móvil - Hotel del Angel</h4>

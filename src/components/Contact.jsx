@@ -85,47 +85,39 @@ export default function Contact() {
         <div className={styles.contentGrid}>
           {/* Columna de Información de Contacto */}
           <div className={styles.contactInfo}>
-            <div className={styles.contactCard}>
+            <a href="mailto:Jonathan_058@hotmail.com" className={styles.contactCard}>
               <FiMail className={styles.contactIcon} />
               <h3 className={styles.contactTitle}>Correo</h3>
-              <a href="mailto:Jonathan_058@hotmail.com" className={styles.contactLink}>
-                Jonathan_058@hotmail.com
-              </a>
-            </div>
+              <span className={styles.contactLink}>Jonathan_058@hotmail.com</span>
+            </a>
 
-            <div className={styles.contactCard}>
+            <a href="tel:+525514712961" className={styles.contactCard}>
               <FiPhone className={styles.contactIcon} />
               <h3 className={styles.contactTitle}>Teléfono</h3>
-              <a href="tel:+525514712961" className={styles.contactLink}>
-                +52 55 1471 2961
-              </a>
-            </div>
+              <span className={styles.contactLink}>+52 55 1471 2961</span>
+            </a>
 
-            <div className={styles.contactCard}>
+            <a
+              href="https://wa.me/525514712961"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactCard}
+            >
               <FiMessageSquare className={styles.contactIcon} />
               <h3 className={styles.contactTitle}>WhatsApp</h3>
-              <a
-                href="https://wa.me/525514712961"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.contactLink}
-              >
-                Enviar mensaje directo
-              </a>
-            </div>
+              <span className={styles.contactLink}>Enviar mensaje directo</span>
+            </a>
 
-            <div className={styles.contactCard}>
+            <a
+              href="https://github.com/Jhony445"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactCard}
+            >
               <FiGithub className={styles.contactIcon} />
               <h3 className={styles.contactTitle}>GitHub</h3>
-              <a
-                href="https://github.com/Jhony445"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.contactLink}
-              >
-                Ver mis repositorios
-              </a>
-            </div>
+              <span className={styles.contactLink}>Ver mis repositorios</span>
+            </a>
           </div>
 
           {/* Columna del Formulario */}
