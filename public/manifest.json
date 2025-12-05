@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jonathan Q",
+  "name": "Jonathan Quistian - Portafolio",
+  "description": "Portafolio de Jonathan David Martinez Quistian, Desarrollador Full Stack",
   "icons": [
     {
       "src": "jqlogo.ico",
