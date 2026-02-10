@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -109,6 +109,34 @@
     font-size: var(--font-size-sm);
     color: var(--color-accent);
     font-weight: var(--font-weight-medium);
+}
+
+@media (min-width: 1920px) {
+    .certificatesSection {
+        padding: 8rem 3rem;
+    }
+
+    .sectionTitle {
+        font-size: 3.5rem;
+    }
+
+    .sectionSubtitle {
+        font-size: 1.75rem;
+        max-width: 800px;
+    }
+
+    .certificatesGrid {
+        gap: 4rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .issuer,
+    .date {
+        font-size: 1.125rem;
+    }
 }
 
 /* Responsive Design */

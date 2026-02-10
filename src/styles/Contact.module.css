@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -138,6 +138,52 @@
 .submitButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+@media (min-width: 1920px) {
+    .contactSection {
+        padding: 4rem 3rem 6rem 3rem;
+    }
+
+    .sectionTitle {
+        font-size: 3.5rem;
+    }
+
+    .sectionSubtitle {
+        font-size: 1.75rem;
+        max-width: 800px;
+    }
+
+    .contentGrid {
+        gap: 5rem;
+    }
+
+    .contactCard {
+        padding: 3rem;
+    }
+
+    .contactIcon {
+        font-size: 3rem;
+    }
+
+    .contactTitle {
+        font-size: 1.5rem;
+    }
+
+    .contactLink {
+        font-size: 1.25rem;
+    }
+
+    .formInput,
+    .formTextarea {
+        padding: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .submitButton {
+        padding: 1.25rem 2.5rem;
+        font-size: 1.5rem;
+    }
 }
 
 /* Responsive Design */

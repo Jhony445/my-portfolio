@@ -10,7 +10,28 @@
     padding: 2rem 2rem;
 }
 
-/* Móvil hasta 768px */
+.certificatesSection {
+    padding: 2rem 2rem;
+}
+
+@media (orientation: portrait) and (min-height: 1024px) {
+    .aboutSection {
+        padding: 1rem 2rem;
+    }
+
+    .projectsSection {
+        padding: 1rem 2rem;
+    }
+
+    .certificatesSection {
+        padding: 1rem 2rem;
+    }
+
+    .contactSection {
+        padding: 1rem 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .aboutSection {
         padding: 0.7rem 1rem 0.5rem;

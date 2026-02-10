@@ -2,15 +2,21 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/ProjectCard.module.css';
 
-const ProjectCard = ({ title, description, tech, image }) => {
+const ProjectCard = ({ title, description, tech, image, url }) => {
   return (
-    <motion.div 
+    <motion.a 
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
       className={styles.card}
-      whileHover={{ y: -10 }}
+      whileHover={{ y: -10, scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
       <div className={styles.imageContainer}>
         <img src={image} alt={title} className={styles.image} />
+        <div className={styles.overlay}>
+          <span className={styles.viewProject}>Ver Proyecto →</span>
+        </div>
       </div>
       
       <div className={styles.content}>
@@ -23,7 +29,7 @@ const ProjectCard = ({ title, description, tech, image }) => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 

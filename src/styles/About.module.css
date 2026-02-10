@@ -5,8 +5,15 @@
     margin-top: 1rem;
 }
 
+@media (orientation: portrait) and (min-height: 1024px) {
+    .aboutSection {
+        padding: 1rem 2rem 1rem 2rem;
+        margin-top: 0;
+    }
+}
+
 .container {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -162,8 +169,51 @@
     color: var(--color-secondary);
     font-size: var(--font-size-sm);
 }
+  
+@media (min-width: 1920px) {
+    .aboutSection {
+        padding: 6rem 3rem 3rem 3rem;
+    }
 
-/* Responsive Design */
+    .sectionTitle {
+        font-size: 3.5rem;
+    }
+
+    .introText {
+        font-size: 1.5rem;
+        max-width: 1000px;
+    }
+
+    .contentGrid {
+        gap: 4rem;
+    }
+
+    .infoCard {
+        padding: 3rem;
+    }
+
+    .cardTitle {
+        font-size: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .skillTitle {
+        font-size: 1.5rem;
+    }
+
+    .skillText {
+        font-size: 1.125rem;
+    }
+
+    .jobTitle {
+        font-size: 1.5rem;
+    }
+
+    .degree {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .contentGrid {
         grid-template-columns: 1fr;

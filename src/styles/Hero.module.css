@@ -8,8 +8,16 @@
   margin-top: -40px;
 }
 
+@media (orientation: portrait) and (min-height: 1024px) {
+  .hero {
+    min-height: auto;
+    padding: 2rem 0 1rem 0;
+    margin-top: 0;
+  }
+}
+
 .container {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 2rem;
   display: grid;
@@ -188,9 +196,46 @@
   cursor: default;
 }
 
-/* ==============================
-   Media Queries (Responsivo)
-   ============================== */
+@media (min-width: 1920px) {
+  .container {
+    gap: 6rem;
+    padding: 0 3rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .imageWrapper {
+    width: 450px;
+    height: 450px;
+  }
+
+  .primaryCta,
+  .secondaryCta {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .techStack {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .techStack span {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     display: grid;
