@@ -17,8 +17,9 @@ export default function Navbar() {
 
   const navLinks = [
     { to: 'home', text: 'Inicio' },
-    { to: 'sobre-mi', text: 'Sobre Mi' },
+    { to: 'sobre-mi', text: 'Sobre Mí' },
     { to: 'proyectos', text: 'Proyectos' },
+    { to: 'certificados', text: 'Certificados' },
     { to: 'contacto', text: 'Contacto', cta: true }
   ];
 
