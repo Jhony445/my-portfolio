@@ -1,4 +1,5 @@
 import React from 'react';
+import Hero from '../components/Hero';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Projects from '../components/Projects';
@@ -7,19 +8,22 @@ import styles from '../styles/Sections.module.css';
 
 export default function Home() {
   return (
-    <main>
-      <section id="sobre-mi" className={styles.aboutSection}>
-        <About />
-      </section>
-      <section id="proyectos" className={styles.projectsSection}>
-        <Projects />
-      </section>
-      <section id="certificados" className={styles.certificatesSection}>
-        <Certificates />
-      </section>
-      <section id="contacto" className={styles.contactSection}>
-        <Contact />
-      </section>
-    </main>
+    <>
+      <Hero />
+      <main>
+        <section id="sobre-mi" className={styles.aboutSection}>
+          <About />
+        </section>
+        <section id="proyectos" className={styles.projectsSection}>
+          <Projects />
+        </section>
+        <section id="certificados" className={styles.certificatesSection}>
+          <Certificates />
+        </section>
+        <section id="contacto" className={styles.contactSection}>
+          <Contact />
+        </section>
+      </main>
+    </>
   );
 }
